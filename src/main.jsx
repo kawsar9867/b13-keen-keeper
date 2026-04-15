@@ -11,12 +11,10 @@ import Timeline from './components/NavBar/Timeline/Timeline'
 import Status from './components/NavBar/Status/Status'
 
 
-const userPromis = fetch ("../public/Json/Api.json").then((res) => res.json());
-
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: Root,
+    Component:Root,
     children: [
       {
         path: "/home",
@@ -30,11 +28,6 @@ const router = createBrowserRouter([
         path: "/status",
         Component: Status,
       },
-      // {
-      //  path:"id",
-      //   element:<Suspense fallback={<span>Loading...</span>}><Id userPromis={userPromis}></Id></Suspense>
-
-      // }
     ],
   },
 ]);

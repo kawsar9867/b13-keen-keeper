@@ -24,7 +24,7 @@
     "id": 4,
     "name": "Emily Davis",
     "time": "2d ago",
-    "status": "Work",
+    "status": "Completed",
     "profile_pic": "https://randomuser.me/api/portraits/women/4.jpg"
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "name": "Olivia Anderson",
     "time": "8d ago",
-    "status": "Work",
+    "status": "Completed",
     "profile_pic": "https://randomuser.me/api/portraits/women/8.jpg"
   },
   {
@@ -68,5 +68,19 @@
     "time": "6d ago",
     "status": "Pending",
     "profile_pic": "https://randomuser.me/api/portraits/women/10.jpg"
+  },
+   {
+    "id": 1,
+    "name": "John Carter",
+    "time": "2d ago",
+    "status": "Pending",
+    "profile_pic": "https://randomuser.me/api/portraits/men/12.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Emily Wilson",
+    "time": "3h ago",
+    "status": "Completed",
+    "profile_pic": "https://randomuser.me/api/portraits/women/22.jpg"
   }
 ]

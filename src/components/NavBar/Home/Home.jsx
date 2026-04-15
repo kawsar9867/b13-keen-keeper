@@ -1,9 +1,11 @@
-import React from 'react';
+
+import Header from '../../Header/Header';
+import Id from '../../API/Id';
 
 const Home = () => {
   return (
-    <div>
-      <h1>hello This is Home</h1>
+    <div> 
+    <Id></Id>
     </div>
   );
 };
