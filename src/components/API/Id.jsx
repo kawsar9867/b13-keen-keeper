@@ -14,8 +14,8 @@ const Id = () => {
       </div>
     <div className="container mx-auto">
    
-      <div>
-        <Suspense fallback={<span>Loading...</span>}>
+      <div className="">
+        <Suspense fallback={<span className="loading loading-infinity loading-xl flex justify-center mx-auto "></span>}>
      <Card  userPromise={userPromise} ></Card>
         </Suspense>
       </div>

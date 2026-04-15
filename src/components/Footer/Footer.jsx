@@ -18,6 +18,9 @@ const Footer = () => {
         <img className='h-8' src={logo4} alt="twitter png" />
         </div>
       </div>
+      <div className='mx-auto max-w-298 '>
+        <p className='divider text-gray-200 mt-8'></p>
+      </div>
       <div className='flex justify-around'>
         <p className='text-[#fafafa90]'>© 2026 KeenKeeper. All rights reserved.</p>
         <div >
