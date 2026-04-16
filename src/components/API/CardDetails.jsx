@@ -1,4 +1,10 @@
 import { useLoaderData, useParams } from "react-router";
+import logo from "../../../public/Assets/call.png"
+import logo2 from "../../../public/Assets/text.png"
+import logo3 from "../../../public/Assets/video.png"
+import { Clock8 } from 'lucide-react';
+import { Landmark } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
 
 const CardDetails = () => {
   const data = useLoaderData();
@@ -40,16 +46,16 @@ const {name, profile_pic, status, email, tag, bio, goal, next_due_date, days_sin
       </div>
 
       <div className="space-y-1">
-        <button className="w-full bg-white border border-gray-100 p-3 rounded-lg flex items-center justify-center gap-2 text-sm font-medium hover:bg-gray-50 transition">
-          <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <button className="w-full bg-white border border-gray-100 p-3 rounded-lg flex items-center justify-center gap-1 text-sm font-medium hover:bg-gray-50 transition">
+          <Clock8 size={15} />
           Snooze 2 Weeks
         </button>
-        <button className="w-full bg-white border border-gray-100 p-3 rounded-lg flex items-center justify-center gap-2 text-sm font-medium hover:bg-gray-50 transition">
-          <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+        <button className="w-full bg-white border border-gray-100 p-3 rounded-lg flex items-center justify-center gap-1 text-sm font-medium hover:bg-gray-50 transition">
+          <Landmark size={15}/>
           Archive
         </button>
-        <button className="w-full bg-white border border-gray-100 p-3 rounded-lg flex items-center justify-center gap-2 text-sm font-medium text-red-500 hover:bg-red-50 transition">
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+        <button className="w-full bg-white border border-gray-100 p-3 rounded-lg flex items-center justify-center gap-1 text-sm font-medium text-red-500 hover:bg-red-50 transition">
+          <Trash2 size={16} />
           Delete
         </button>
       </div>
@@ -60,7 +66,7 @@ const {name, profile_pic, status, email, tag, bio, goal, next_due_date, days_sin
       <div className="grid grid-cols-3 gap-4">
         <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm text-center">
           <div className="text-3xl font-bold text-gray-700 ">{days_since_contact}</div>
-          <div class="text-[11px] text-gray-400 mt-1 uppercase font-semibold">Days Since Contact</div>
+          <div className="text-[11px] text-gray-400 mt-1 uppercase font-semibold">Days Since Contact</div>
         </div>
         <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm text-center">
           <div className="text-3xl font-bold text-gray-700">{goal}</div>
@@ -82,16 +88,16 @@ const {name, profile_pic, status, email, tag, bio, goal, next_due_date, days_sin
         <h3 className="text-gray-600 font-semibold text-sm mb-4">Quick Check-In</h3>
         <div className="grid grid-cols-3 gap-3">
           <button className="flex flex-col items-center justify-center p-4 border border-gray-100 rounded-lg bg-gray-50/50 hover:bg-gray-100 transition">
-            <svg className="w-6 h-6 text-gray-600 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-            <span className="text-xs font-medium">Call</span>
+            <img src={logo} alt="phone logo" />
+            <span className="text-lg font-semibold mt-1">Call</span>
           </button>
           <button className="flex flex-col items-center justify-center p-4 border border-gray-100 rounded-lg bg-gray-50/50 hover:bg-gray-100 transition">
-            <svg className="w-6 h-6 text-gray-600 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
-            <span className="text-xs font-medium">Text</span>
+            <img src={logo2} alt="text png" />
+            <span className="text-lg font-semibold mt-1">Text</span>
           </button>
           <button className="flex flex-col items-center justify-center p-4 border border-gray-100 rounded-lg bg-gray-50/50 hover:bg-gray-100 transition">
-            <svg className="w-6 h-6 text-gray-600 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-            <span className="text-xs font-medium">Video</span>
+           <img src={logo3} alt="video png" />
+            <span className="text-lg mt-1 font-semibold">Video</span>
           </button>
         </div>
       </div>
