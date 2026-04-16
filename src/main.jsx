@@ -9,6 +9,7 @@ import Root from './components/Root/Root';
 import Home from './components/NavBar/Home/Home'
 import Timeline from './components/NavBar/Timeline/Timeline'
 import Status from './components/NavBar/Status/Status'
+import CardDetails from './components/API/CardDetails';
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
         path: "/status",
         Component: Status,
       },
+      {
+        path:"/cardDetails/:id",
+        Component:CardDetails,
+        loader: () => fetch("/profile.json")
+      }
     ],
   },
 ]);

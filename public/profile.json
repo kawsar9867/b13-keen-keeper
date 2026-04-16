@@ -5,7 +5,12 @@
     "time": "62d ago",
     "status": "Almost Due",
     "tag": ["WORK"],
-    "profile_pic": "https://randomuser.me/api/portraits/men/1.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/men/1.jpg",
+    "email": "david.kim@example.com",
+    "days_since_contact": 62,
+    "bio": "Worked together on multiple office projects.",
+    "goal": 30,
+    "next_due_date": "2026-05-01"
   },
   {
     "id": 2,
@@ -13,7 +18,12 @@
     "time": "10d ago",
     "status": "Completed",
     "tag": ["FAMILY"],
-    "profile_pic": "https://randomuser.me/api/portraits/women/2.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/women/2.jpg",
+    "email": "sarah.lee@example.com",
+    "days_since_contact": 10,
+    "bio": "Cousin, regularly catch up on weekends.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
   },
   {
     "id": 3,
@@ -21,7 +31,12 @@
     "time": "5h ago",
     "status": "Pending",
     "tag": ["HOBBY", "TRAVEL"],
-    "profile_pic": "https://randomuser.me/api/portraits/men/3.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/men/3.jpg",
+    "email": "john.smith@example.com",
+    "days_since_contact": 0,
+    "bio": "Travel buddy and photography enthusiast.",
+    "goal": 7,
+    "next_due_date": "2026-04-18"
   },
   {
     "id": 4,
@@ -29,7 +44,12 @@
     "time": "2d ago",
     "status": "Completed",
     "tag": ["TRAVEL"],
-    "profile_pic": "https://randomuser.me/api/portraits/women/4.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/women/4.jpg",
+    "email": "emily.davis@example.com",
+    "days_since_contact": 2,
+    "bio": "Met during a trip, stays in touch occasionally.",
+    "goal": 20,
+    "next_due_date": "2026-05-05"
   },
   {
     "id": 5,
@@ -37,7 +57,12 @@
     "time": "1w ago",
     "status": "Almost Due",
     "tag": ["WORK"],
-    "profile_pic": "https://randomuser.me/api/portraits/men/5.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/men/5.jpg",
+    "email": "michael.brown@example.com",
+    "days_since_contact": 7,
+    "bio": "Office colleague from previous company.",
+    "goal": 14,
+    "next_due_date": "2026-04-23"
   },
   {
     "id": 6,
@@ -45,7 +70,12 @@
     "time": "3h ago",
     "status": "Pending",
     "tag": ["FAMILY", "HOBBY"],
-    "profile_pic": "https://randomuser.me/api/portraits/women/6.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/women/6.jpg",
+    "email": "sophia.wilson@example.com",
+    "days_since_contact": 0,
+    "bio": "Close family friend, shares hobbies.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
   },
   {
     "id": 7,
@@ -53,7 +83,12 @@
     "time": "4d ago",
     "status": "Completed",
     "tag": ["HOBBY"],
-    "profile_pic": "https://randomuser.me/api/portraits/men/7.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/men/7.jpg",
+    "email": "daniel.martinez@example.com",
+    "days_since_contact": 4,
+    "bio": "Gym partner and fitness enthusiast.",
+    "goal": 7,
+    "next_due_date": "2026-04-21"
   },
   {
     "id": 8,
@@ -61,7 +96,12 @@
     "time": "8d ago",
     "status": "Completed",
     "tag": ["TRAVEL"],
-    "profile_pic": "https://randomuser.me/api/portraits/women/8.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/women/8.jpg",
+    "email": "olivia.anderson@example.com",
+    "days_since_contact": 8,
+    "bio": "Met during a group tour abroad.",
+    "goal": 15,
+    "next_due_date": "2026-04-30"
   },
   {
     "id": 9,
@@ -69,7 +109,12 @@
     "time": "12h ago",
     "status": "Almost Due",
     "tag": ["WORK", "TRAVEL"],
-    "profile_pic": "https://randomuser.me/api/portraits/men/9.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/men/9.jpg",
+    "email": "james.taylor@example.com",
+    "days_since_contact": 0,
+    "bio": "Business partner, travels frequently.",
+    "goal": 10,
+    "next_due_date": "2026-04-19"
   },
   {
     "id": 10,
@@ -77,23 +122,37 @@
     "time": "6d ago",
     "status": "Pending",
     "tag": ["FAMILY"],
-    "profile_pic": "https://randomuser.me/api/portraits/women/10.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/women/10.jpg",
+    "email": "isabella.thomas@example.com",
+    "days_since_contact": 6,
+    "bio": "Younger sister, chats regularly.",
+    "goal": 5,
+    "next_due_date": "2026-04-22"
   },
   {
-    "id": 1,
+    "id": 11,
     "name": "John Carter",
     "time": "2d ago",
     "status": "Pending",
     "tag": ["HOBBY"],
-    "profile_pic": "https://randomuser.me/api/portraits/men/12.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "john.carter@example.com",
+    "days_since_contact": 2,
+    "bio": "Gaming friend from online community.",
+    "goal": 7,
+    "next_due_date": "2026-04-21"
   },
   {
-    "id": 2,
+    "id": 12,
     "name": "Emily Wilson",
     "time": "3h ago",
     "status": "Completed",
     "tag": ["TRAVEL"],
-    "profile_pic": "https://randomuser.me/api/portraits/women/22.jpg"
+    "profile_pic": "https://randomuser.me/api/portraits/women/22.jpg",
+    "email": "emily.wilson@example.com",
+    "days_since_contact": 0,
+    "bio": "Travel blogger friend, shares tips.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
   }
-
 ]

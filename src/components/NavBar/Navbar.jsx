@@ -20,21 +20,21 @@ const Navbar = () => {
               <NavLink
   to="/home"
   className={({isActive}) => `
-              flex gap-1 font-semibold p-1 rounded-sm ${
+              flex gap-1 font-semibold p-1 flex items-center rounded-sm ${
                 isActive ? "bg-[#244d3f] text-white shadow-sm" : "text-gray-500 hover:text-black "
               }`}
 >
-  <House />
+  <House size={20} />
   Home
 </NavLink>
               <NavLink className={({isActive}) => `
-              flex gap-1 font-semibold p-1 rounded-sm ${
+              flex gap-1 font-semibold p-1 flex items-center rounded-sm ${
                 isActive ? "bg-[#244d3f] text-white shadow-sm" : "text-gray-500 hover:text-black "
-              }`} to="/timeline"><Clock4 />Timeline</NavLink>
+              }`} to="/timeline"><Clock4 size={20} />Timeline</NavLink>
               <NavLink className={({isActive}) => `
-              flex gap-1 font-semibold p-1 rounded-sm ${
+              flex gap-1 font-semibold p-1 flex items-center rounded-sm ${
                 isActive ? "bg-[#244d3f] text-white shadow-sm" : "text-gray-500 hover:text-black "
-              }`} to="/status"> <ChartLine />Status</NavLink>
+              }`} to="/status"> <ChartLine size={20} />Status</NavLink>
             </nav>
           </div>
         </div>

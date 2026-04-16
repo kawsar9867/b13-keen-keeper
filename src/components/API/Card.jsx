@@ -1,4 +1,5 @@
 import React, { use } from "react";
+import OneCard from "./OneCard";
 
 const Card = ({ userPromise }) => {
   const users = use(userPromise);
@@ -43,43 +44,7 @@ const Card = ({ userPromise }) => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-5 container mx-auto max-w-350 ">
         
-        {users.map((user) => {
-          return (
-            <div>
-              <div className="bg-white p-5 rounded-md  shadow-sm transform hover:scale-105 duration-300">
-                <img
-                  className="flex justify-center mx-auto rounded-full border-2 border-green-200 shadow-md"
-                  src={user.profile_pic}
-                  alt="Profile pic"
-                />
-                <h1 className="text-[20px] font-semibold">{user.name}</h1>
-                <p className=" text-gray-400 p-1">{user.time}</p>
-                <div className="flex gap-2 justify-center mb-2">
-                  {user.tag.map((t, i) => (
-                    <span
-                      key={i}
-                      className="px-2 py-1 text-xs bg-gray-200 rounded-full"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                <p
-                  className={
-                    user.status === "Completed" ?
-                      "text-white font-semibold bg-green-500 rounded-full inline-block px-3 py-1"
-                    : user.status === "Almost Due" ?
-                      "text-white bg-red-500 font-semibold rounded-full inline-block px-3 py-1"
-                    : "text-white font-semibold bg-gray-500 rounded-full inline-block px-3 py-1"
-
-                  }
-                >
-                  {user.status}
-                </p>
-              </div>
-            </div>
-          );
-        })}
+        {users.map(user => <OneCard key={user.id} user={user}></OneCard>)}
       </div>
     </section>
   );
