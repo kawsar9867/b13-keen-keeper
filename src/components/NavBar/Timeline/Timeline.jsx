@@ -1,21 +1,23 @@
 import React, { useContext, useState } from "react";
 import { PhoneIncoming, MessageCircleMore, Video } from "lucide-react";
 import { Mycontext } from "../../API/Context";
-import logo from "/Assets/call.png";
+import Calllogo from "/Assets/call.png";
+import Textlogo from "/Assets/text.png";
+import Videologo from "/Assets/video.png";
 
-const Timeline = ({ cart = [] }) => {
+const Timeline = () => {
   const date = new Date();
   const newDate = { year: "numeric", month: "long", day: "numeric" };
   const formateDate = date.toLocaleDateString("en-US", newDate);
 
   const { card } = useContext(Mycontext);
-  console.log(card);
-  const [filter, setFilter] = useState("all");
 
-  const filteredCart = (cart || []).filter((item) => {
-    if (filter === "all") return true;
-    return item.type?.toLowerCase() === filter.toLowerCase();
-  });
+  const [filter, setFilter] = useState("");
+
+  // const filteredCart = (cart || []).filter((item) => {
+  //   if (filter === "all") return true;
+  //   return item.type?.toLowerCase() === filter.toLowerCase();
+  // });
 
   return (
     <div className="max-w-3xl mx-auto m-10 font-sans">
@@ -59,21 +61,46 @@ const Timeline = ({ cart = [] }) => {
         <h2 className="text-lg font-bold mb-4 text-gray-700 border-b pb-2">
           Recent Activities ({card.length})
         </h2>
-        <div className="space-y-3">
-          {card.map((item) => (
-            <div className=" gap-3 border p-3 rounded-md shadow-lg space-y-3 items-center border-gray-300">
-              <div className="flex gap-2">
-                <img className="h-6" src={logo} alt="" />
-                <h2>
-                  {" "}
-                  <span className="font-semibold text-xl ">Call </span>
-                  <span className="text-gray-500">with {item.name}</span>{" "}
-                </h2>
+
+        <div className="mt-5">
+          {card.map((friend, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-md rounded-md p-4 mb-4 flex items-center gap-4"
+            >
+              <div className="w-10 h-10">
+                {friend.type === "Call" ?
+                  <img
+                    src={Calllogo}
+                    alt={friend.name}
+                    className="w-full h-full object-cover rounded-md"
+                  />
+                : friend.type === "Text" ?
+                  <img
+                    src={Textlogo}
+                    alt={friend.name}
+                    className="w-full h-full object-cover rounded-md"
+                  />
+                : <img
+                    src={Videologo}
+                    alt={friend.name}
+                    className="w-full h-full object-cover rounded-md"
+                  />
+                }
               </div>
-              <h2>{formateDate}</h2>
+              <div>
+                <h3 className="text-lg font-semibold text-[#244D3F] ">
+                  {friend.type} with{" "}
+                  <span className="text-gray-600">{friend.name} </span>
+                </h3>
+                <p className="text-gray-600 ">
+                  {formateDate}
+                </p>
+              </div>
             </div>
           ))}
         </div>
+
         {/* {filteredCart.length === 0 ?
           <div className="py-10 text-center">
             <p className="text-gray-400 italic">

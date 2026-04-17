@@ -1,8 +1,8 @@
 import React, { use } from "react";
 import OneCard from "./OneCard";
 
-const Card = ({ userPromise }) => {
-  const users = use(userPromise);
+const Card = ({ fetchDAta }) => {
+  const users = use(fetchDAta);
   console.log( users);
 
   const completedCount = users.filter(

@@ -1,16 +1,35 @@
-# React + Vite
+# B13 Keen Keeper 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Android application built with **Kotlin**, designed to manage and organize tasks efficiently with a clean and minimal UI.
 
-Currently, two official plugins are available:
+## 📱 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**B13 Keen Keeper** is a productivity-focused mobile application that helps users keep track of their daily tasks, notes, and important activities in one place.  
+It is designed with simplicity, performance, and usability in mind.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📝 Create, edit, and delete tasks easily
+- 📌 Mark tasks as completed or pending
+- 🔔 Simple reminder/notification support
+- 🎨 Clean and user-friendly UI
+- ⚡ Lightweight and fast performance
+- 📂 Organized task management system
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Kotlin
+- Android SDK
+- XML (UI Design)
+- Material Design Components
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Android Studio installed
+- Minimum SDK version supported: (add your minSdk here)
+
+### Installation
+
+```bash
+git clone https://github.com/kawsar9867/b13-keen-keeper.git
