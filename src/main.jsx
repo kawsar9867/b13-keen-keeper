@@ -10,6 +10,8 @@ import Home from './components/NavBar/Home/Home'
 import Timeline from './components/NavBar/Timeline/Timeline'
 import Status from './components/NavBar/Status/Status'
 import CardDetails from './components/API/CardDetails';
+import { Component } from 'lucide-react';
+import Page404 from './components/Page404/Page404';
 
 
 const router = createBrowserRouter([
@@ -33,7 +35,12 @@ const router = createBrowserRouter([
         path:"/cardDetails/:id",
         Component:CardDetails,
         loader: () => fetch("/profile.json")
+      },
+      {
+        path:"/*",
+      Component:Page404
       }
+      
     ],
   },
 ]);
